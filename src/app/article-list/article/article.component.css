@@ -1,0 +1,22 @@
+.article-preview {
+    background-color: lightskyblue;
+    border-radius: 0.5em;
+    padding: 2em;
+    width:80vw;
+}
+
+.article-preview:hover {
+    cursor: pointer;
+}
+
+.deleteButton {
+    text-align: end;
+}
+
+.deleteBtn{
+    background-color: red;
+    color: white;
+}
+
+
+

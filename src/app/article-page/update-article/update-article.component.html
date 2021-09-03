@@ -1,0 +1,31 @@
+<div >
+ <form [formGroup]="articleForm" (ngSubmit)="updateArticle()">
+        
+        <div class="form-item">
+            <label for="id">Identifiant de l'article : </label>
+            <input type="number" id="id" formControlName="id" [(ngModel)]="article.id" readonly/>
+        </div>
+
+        <div class="form-item">
+            <label for="userId">Identifiant de l'auteur : </label>
+            <input type="number" id="userId" formControlName="userId" [(ngModel)]="article.userId" readonly/>
+        </div>
+    
+        <div class="form-item">
+            <label for="title">Titre : </label>
+            <textarea  id="title" formControlName="title" [(ngModel)]="article.title" rows="1" cols="100"></textarea>
+        </div>
+    
+        <div class="form-item">
+            <label for="body">Contenu : </label>
+            <textarea id="body" formControlName="body" [(ngModel)]="article.body" rows="10" cols="50"></textarea>
+        </div>
+    
+    
+        <button routerLink="/articles/{{article.id}}">Annuler</button>
+        <button type="submit" >Modifier</button>
+    </form>
+</div>
+
+
+

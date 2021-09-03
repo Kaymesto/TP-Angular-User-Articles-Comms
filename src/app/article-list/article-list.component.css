@@ -1,0 +1,6 @@
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vh;
+    flex-wrap: wrap;
+}

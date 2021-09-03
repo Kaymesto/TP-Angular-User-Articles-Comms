@@ -1,0 +1,8 @@
+<a routerLink="/details/{{article.id}}">
+    <div class="article-preview">
+        <h3>{{article.title | titlecase}} </h3>
+        <div class="deleteButton"><button class="deleteBtn" (click)="delete(article)">&times;</button></div>
+        <p>par {{ article.userId}}</p>
+        <p>{{ article.body | slice:0:100 }}</p>
+    </div>
+</a>

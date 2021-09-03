@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-header">{{ user.name }} <button (click)="delete(user)">&times;</button></div>
+  <div class="card-body">
+    <ul>
+      <li *ngIf="user.company">Entreprise: {{ user.company.name }}</li>
+      <li *ngIf="user.address">Adresse: {{user.address.suite}} {{ user.address.street }} ,{{user.address.zipcode}}  {{user.address.city }}</li>
+    </ul>
+  </div>
+  <div class="card-footer">
+    <a [href]="'mailto:'+ user.email">Envoyer un mail</a>
+    <a [href]="'tel:'+ user.phone">Appeler {{user.name}}</a>
+  </div>
+</div>
