@@ -1,0 +1,5 @@
+<h2>Liste des Articles !</h2>
+<button routerLink="/articles/add">Ajouter un article</button>
+<div class="flex">
+    <app-article [article]="article" *ngFor="let article of articles" [routerLink]="['/articles',article.id]"></app-article>
+</div>

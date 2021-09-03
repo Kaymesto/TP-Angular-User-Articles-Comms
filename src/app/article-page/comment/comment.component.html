@@ -1,0 +1,11 @@
+<div class="comment-card">
+  <div class="comment-header">
+    <p>
+      {{ comment.name }} |
+      <a [href]="'mailto:' + comment.email">{{ comment.email }}</a>
+    </p>
+  </div>
+  <div class="comment-body">
+    <p>{{ comment.body }}</p>
+  </div>
+</div>

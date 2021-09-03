@@ -1,0 +1,14 @@
+.comments {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.updateBtn {
+    float: right;
+}
+
+@import '~bootstrap/scss/bootstrap';
+
+@import "styles/spinner";
